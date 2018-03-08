@@ -1,0 +1,43 @@
+
+body
+{
+	background-color: #025A6A;
+	position: center;
+}
+
+
+h1
+{
+	font-size: 50px;
+	color: #A8E130;
+	position: center;
+	margin-left: 10px;
+	font-family: Fugaz One;
+}
+
+
+h2
+{
+	font-size: 35px;
+	color: #A8E130;
+	margin-left: 30px;
+	font-family: Fugaz One;
+}
+
+
+h3
+{
+	font-size: 18px;
+	color: #A8E130;
+	margin-left: 10px;
+	font-family: Fugaz One;
+}
+
+li
+{
+	font-size: 28px;
+	color: #A8E130;
+	margin-left: 40px;
+	font-family: Fugaz One;
+}
+

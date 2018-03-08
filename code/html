@@ -1,0 +1,47 @@
+<!-- HTML Sample - Crypto Ticker 3/6/2018
+	 Planning, pseudocoding, strategy and problem analysis phase.
+	-->
+<DOCTYPE html>
+
+<meta name="viewport">
+<head>
+<link href = "https://fonts.googleapis.com/css?family=Fugaz+One|Kelly+Slab|Lato|Orbitron" rel="stylesheet">
+<link https://api.coinbase.com/v2/prices>
+<link https://www.quandl.com/api/v3/datasets/WIKI/FB/metadata.json>
+<link rel="stylesheet" href="style.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- https://www.w3schools.com/jquery/jquery_get_started.asp -->
+<script src="/main.js"></script>
+
+</head>
+
+
+<title>CryptoTicker</title>
+
+<body>
+	<h1>CryptoTicker</h1> <!-- data updates and comparison. 
+					read from API. JSON file, use AJAX to get data -->
+	<h2>Current Price</h2>
+	<ul id = "price">
+		<li>BTC = 		<button id="btc">BTC</button></li>
+		<li>ETH = 		<button id="eth">ETH</button></li>
+	</ul><!--<span id="currentPrice"></span> <!-- https://stackoverflow.com/questions/32672365/get-data-from-json-api-and-display-it-in-html -->
+	
+	
+	<h2>Graph Comparison</h2>
+	
+	
+	<h2>Price Alerts</h2>
+	
+	<ul>  <!-- javaScript or Bootstrap for menu -->
+		<li>Alert when price goes above <input type="text" id="above"></li>
+		<li>Alert when price goes below <input type="text" id="below"></li>
+		<button id="update">Update</button>
+	</ul>
+	
+	<h3>Developed by Glitch Doctor kos_minimus</h3>
+
+</body>
+
+</DOCTYPE>

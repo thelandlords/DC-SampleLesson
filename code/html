@@ -1,47 +1,55 @@
-<!-- HTML Sample - Crypto Ticker 3/6/2018
-	 Planning, pseudocoding, strategy and problem analysis phase.
-	-->
-<DOCTYPE html>
+<!-- HTML Sample 2 - Crypto Ticker 3/11/2018 This version is for 
+the Mock Lesson	-->
+
+<!DOCTYPE html>
 
 <meta name="viewport">
 <head>
-<link href = "https://fonts.googleapis.com/css?family=Fugaz+One|Kelly+Slab|Lato|Orbitron" rel="stylesheet">
-<link https://api.coinbase.com/v2/prices>
-<link https://www.quandl.com/api/v3/datasets/WIKI/FB/metadata.json>
-<link rel="stylesheet" href="style.css">
+	<!--
+<link href = "https://fonts.googleapis.com/css?family=Fugaz+One|Lato" rel="stylesheet">
+-->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- https://www.w3schools.com/jquery/jquery_get_started.asp -->
-<script src="/main.js"></script>
+<!-- <link rel="stylesheet" href="style.css"> -->
 
+<!-- <script src="main.js"></script> -->
 </head>
-
 
 <title>CryptoTicker</title>
 
 <body>
-	<h1>CryptoTicker</h1> <!-- data updates and comparison. 
-					read from API. JSON file, use AJAX to get data -->
-	<h2>Current Price</h2>
-	<ul id = "price">
-		<li>BTC = 		<button id="btc">BTC</button></li>
-		<li>ETH = 		<button id="eth">ETH</button></li>
-	</ul><!--<span id="currentPrice"></span> <!-- https://stackoverflow.com/questions/32672365/get-data-from-json-api-and-display-it-in-html -->
+	<h1>CryptoTicker</h1>
 	
+	<!--  Get current prices button and output to HTML doc-->
 	
-	<h2>Graph Comparison</h2>
+	<button type="button" id="refresh" onclick="getPrices()">
+		<h3>Get Current Prices</h3></button>
 	
+			<h2>BTC = $<span id="priceBTC">priceBTC</span></h2>
+		<br>
+		
+	<!-- Price alerts, set by user.  If an alert is true, change field BG color -->
+			
+		<button type ="button" id="update" onclick="setAlerts()">
+			<h3>Update Alerts</h3></button>
+
+				
+		<ul>	
+			 <li><h2>BTC</h2></li> <!--  BTC alert settings -->
+			
+			<ol>
+				<li><h3>Alert when price goes above $
+					<span id="aboveBTC">aboveBTC</span></h3></li>
+				<li><h3>Alert when price goes below $
+					<span id="belowBTC">aboveBTC</span></h3></li>
+			</ol>
+		</ul> 
+			
+	<br><br>
 	
-	<h2>Price Alerts</h2>
-	
-	<ul>  <!-- javaScript or Bootstrap for menu -->
-		<li>Alert when price goes above <input type="text" id="above"></li>
-		<li>Alert when price goes below <input type="text" id="below"></li>
-		<button id="update">Update</button>
-	</ul>
-	
-	<h3>Developed by Glitch Doctor kos_minimus</h3>
+<!--	<h4>Developed by The Glitch Doctor  <a href="http:\\glitchdoctor.net">glitchdoctor.net</a></h4>
+-->
+
+<!--	<h4>Powered by Coinbase API   https://api.coinbase.com/v2/prices/spot?curency=USD</h4>
+-->
 
 </body>
-
-</DOCTYPE>

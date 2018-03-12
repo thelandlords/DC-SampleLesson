@@ -1,7 +1,6 @@
 body
 {
 	background-color: #025A6A;
-	position: center;
 }
 
 
@@ -54,7 +53,7 @@ li
 	border-radius: 50px;
 }
 
-#priceBTC, #priceETH, #aboveBTC, #belowBTC, #aboveETH, #belowETH
+#priceBTC, #aboveBTC, #belowBTC
 {
 	background-color: #228294; 
 	color: #BFEF5A;

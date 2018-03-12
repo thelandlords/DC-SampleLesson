@@ -1,34 +1,22 @@
 //CryptoTicker 03/11/18 - javascript for CryptoTicker site
 
 //set constant input for testing purposes.  Get from API later
-const priceBTC=8250.05;
-const priceETH=325.80;
+const priceBTC=10250.05;
 
 //get the current BTC and ETH prices
 function getPrices()
 {
 	document.getElementById("priceBTC").innerHTML = priceBTC;
-	document.getElementById("priceETH").innerHTML = priceETH;
 }
 
 //set the alert threshold values to compare to the current price
 function setAlerts()
 {
-	const aboveBTC = 9010.00;
+	const aboveBTC = 9500.00;
 	const belowBTC = 6500.50;
-	
-	const aboveETH = 750.00;
-	const belowETH = 400.50;
-
 
 	//output the threshold values for BTC
-	document.getElementById("aboveBTC").innerHTML = aboveBTC;
-	document.getElementById("belowBTC").innerHTML = belowBTC;
-	
-	
-	//output the threshold values for ETH
-	document.getElementById("aboveETH").innerHTML = aboveETH;
-	document.getElementById("belowETH").innerHTML = belowETH;
+	document.getElementById("aboveBTC").innerHTML = aboveBTC;	
 	
 	//compare BTC price to user alert values
 	if(priceBTC>aboveBTC)
@@ -36,21 +24,5 @@ function setAlerts()
 		document.getElementById("aboveBTC").style.backgroundColor="blue";
 	}
 	
-	if(priceBTC<belowBTC)
-	{
-		document.getElementById("belowBTC").style.backgroundColor="red";
-	}
 	
-	//compare ETH price to user alert values
-	if(priceETH>aboveETH)
-	{
-		document.getElementById("aboveETH").style.backgroundColor="blue";
-	}
-	
-	if(priceETH<belowETH)
-	{
-		document.getElementById("belowETH").style.backgroundColor="red";
-	}
-
 }
-

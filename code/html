@@ -25,24 +25,16 @@
 			
 		<button type ="button" id="update" onclick="setAlerts()">
 			<h3>Update Alerts</h3></button>
-
-				
-		<ul>	
-			 <li><h2>BTC</h2></li> <!--  BTC alert settings -->
+	
+	  <h2>BTC</h2> <!--  BTC alert settings -->
 			
-			<ol>
-				<li><h3>Alert when price goes above $
-					<span id="aboveBTC">aboveBTC</span></h3></li>
-				<li><h3>Alert when price goes below $
-					<span id="belowBTC">aboveBTC</span></h3></li>
-			</ol>
 			
-		</ul>	 
+		<h3>Alert when price goes above $ <span id="aboveBTC">aboveBTC</span></h3>
 			
 	<br>
 	<br>
 	
-	<h4>Developed by The Glitch Doctor  <a href="http:\\glitchdoctor.net">glitchdoctor.net</a></h4>
+<h4>Developed by The Glitch Doctor  <a href="http:\\glitchdoctor.net">glitchdoctor.net</a></h4>
 <!--	<h4>Powered by Coinbase API   https://api.coinbase.com/v2/prices/spot?curency=USD</h4>
 -->
 
